@@ -1,0 +1,368 @@
+/*SAKSHI<*_*>*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav .nav-logo img {
+    height: 50px;
+}
+
+nav .nav-logo a {
+    width: 100px;
+    color: #fff;
+}
+
+nav .nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-menu li {
+    margin-left: 1rem;
+}
+
+nav .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav .nav-menu li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+
+nav .menu-toggle {
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* SECTIONS */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+/* HOME */
+#home {
+    background: url('farm-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #033f11;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #102815;
+}
+
+#features, #pricing, #testimonials, #buyers {
+    background: #f5f8f3;
+    text-align: center;
+}
+
+#features h2, #pricing h2, #testimonials h2, #contact h2, #buyers h2 {
+    margin-bottom: 40px;
+}
+
+.features-container, .pricing-container, .testimonial-container, .buyers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature, .pricing-card, .testimonial, .buyer-form, .buyer-summary {                                 /* BOX */
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    width: 400px;
+    transition: transform 0.3s;
+}
+
+.feature img, .pricing-card img, .testimonial img {                               /* IMG */
+    width: 100%;
+    border-radius: 5px;
+}
+
+.feature h3, .pricing-card h3, .testimonial h4 {
+    margin-top: 20px;
+}
+
+.feature:hover, .pricing-card:hover, .testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* PRCING */
+.pricing-container {
+    margin: auto;
+}
+
+.pricing-category {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    text-align: center;
+}
+
+.pricing-category h3{
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pricing-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 250px;
+    transition: transform 0.3s;
+}
+
+.pricing-card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.pricing-card h4 {
+    margin-top: 20px;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/*REVIOW*/
+.testimonial img {
+    width: 75%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.reviews {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .review-form {
+    margin-bottom: 0px;
+  }
+  
+  .rating {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #ccc;
+  }
+  
+  .rating .filled {
+    color: #ffa500;
+  }
+  
+  .rating .star {
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .review .review-text {
+    margin: 10px 5px;
+  }
+  
+  .review .review-author {
+    font-style: italic;
+    color: #666;
+  }
+
+/* CONTACT */
+#contact {
+    max-width: 100%;
+    margin: 0px;
+    background-color: #28a745;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0px 500px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact .btn {
+    margin-left: 45%;
+}
+
+
+/* FOOTOR */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #28a745;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        padding: 1rem 0;
+    }
+
+    nav .nav-menu li {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    .feature, .pricing-card, .testimonial, .buyer-form, .buyer-summary {
+        width: 100%;
+    }
+}
+
+
+/*------------------------------------------         BUYERS PAGE         ----------------------------------------*/
+.buyers-page {
+    min-height: 40vh;
+    padding-top: 100px;
+}
+
+#buyers {
+    background: url('farm-bg.jpg') no-repeat center center/cover;
+}
+
+.buyers-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.buyer-form,
+.buyer-summary {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    width: 400px;
+
+}
+
+.form-buy {
+    align-self: auto;
+    text-align: left;
+    padding: 0px 10px;
+    width: 450px;
+    font-size: 17px;
+}
